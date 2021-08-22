@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 30px;
+}
+
+.container {
+    display: flex;
+}
+nav{
+    background-color: lightblue;
+}
+ul{
+    list-style: none;
+    background-color: rgb(48, 187, 233);
+    display: flex;
+    /* justify-content: stretch; */
+    height: 150px;
+    /* flex-direction: row-reverse; */
+    /* justify-content: space-between; */
+}
+nav > ul > li {
+    background-color: tomato;
+    /* margin-right: 30px; */
+}
+img {
+    width: 200px;
+    height: 200px;
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+article {
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+article p{
+    background: blue;
+    color: white;
+    width: 350px;
+    margin-bottom: 15px;
+}

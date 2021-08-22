@@ -1,0 +1,104 @@
+.add-to-do{
+    .to-do-container{
+        text-align: center;
+        .close{
+            margin:0 auto;
+            text-decoration: none;
+            background-color: var(--bg);
+            color:var(--colorr-text);
+            font-size: 13px;
+            padding:5px;
+            border-radius:5px;
+            margin-bottom:20px;
+        }
+        .add-task{
+            text-align: left;
+            margin-top:20px;
+            padding:15px;
+            background:var(--bg);
+            border-radius:5px;
+            label{
+                display:block;
+                margin-bottom:10px;
+                font-size:13px;
+                color:var(--colorr-text);
+            }
+            input{
+                display:block;
+                padding:5px;
+                height:35px;
+                border-radius:5px;
+                width:240px;
+                background: var(--bg-panel);
+                border:none;
+                color:var(--colorr-text);
+            }
+            input[type=button]{
+                background: var(--bg-color-mode);
+                margin-top:20px;
+                color:var(--btn-white);
+            }
+        }
+        .all-tasks{
+            text-align: left;
+            margin-top:20px;
+            padding:15px;
+            background:var(--bg);
+            border-radius:5px;
+            height:350px;
+            .all-task-h{
+                font-size:13px;
+                color:var(--colorr-text);
+            }
+            .task-components{
+                margin-top:20px;
+                height:90%;
+                overflow-y: scroll;
+                background: var(--bg-panel);
+                .task-group-card{
+                    padding:10px;
+                    color:var(--colorr-text);
+                    .date-of-month{
+                        font-size:14px;
+                        margin-bottom: 3px;
+                    }
+                    .task-remaining{
+                        margin-bottom:10px;
+                        font-size: 12px;
+                    }
+                    .container{
+                        background: var(--bg);
+                        border-radius:5px;
+                        .task{
+                            display:flex;
+                            padding:15px 10px;
+                            input{
+                                margin-right:10px;
+                            }
+                            p{
+                                font-size:13px;
+                            }
+                        }
+                    }
+                }
+            }
+            .task-components::-webkit-scrollbar{
+                width:3px;
+            }
+            .task-components::-webkit-scrollbar-button{
+                background:rgb(165, 164, 164);
+                display:none;
+       
+            }
+            .task-components::-webkit-scrollbar-thumb{
+                background-color: var(--bg-color-mode);
+            }
+            .task-components::-webkit-scrollbar-track-piece{
+                background-color:rgb(165, 164, 164);
+            }
+        }
+    }
+}
+.add-to-do:target{
+    top:0;
+}

@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(146, 143, 143);
+    color: whitesmoke;
+}
+
+
+div.container {
+    /* background-color: aqua; */
+    width: 1000px;
+    margin: auto;
+    margin-top: 50px;
+}
+/* styling the top*/
+
+.top{
+    display: flex;
+}
+/* styling the top nav*/
+nav {
+    display: flex;
+    background-color: black;
+    padding: 10px;
+    justify-content: space-between;
+}
+nav>h3 {
+    flex-grow: 1;
+    /* background-color: green; */
+}
+nav > ul {
+    list-style: none;
+    display: flex;
+    flex-grow: 3;
+    justify-content: space-around;
+    margin-right: 5px;
+}
+.nav-icon {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 0.1;
+}
+.nav-icon i{
+    color: white;
+    background-color: blue;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.right{
+    width: 250px;
+    height: 250px;
+    background-color: blue;
+    flex-grow: 1;
+}
+
+.left {
+    flex-grow: 3;
+    margin-right: 15px;
+}
+
+/* styling left-item and right-item*/
+article{
+    /* background-color: aquamarine; */
+    display: flex;
+    margin-top: 20px;
+}
+
+.left-item {
+    height: 200px;
+    background-color: red;
+    flex-grow: 1.5;
+    margin-right: 5px;
+}
+.right-item {
+    padding: 15px;
+    flex-grow: 1;
+    text-align: center;
+    background-color: black;
+}
+
+
+
+.right-item .rating {
+    border: 20px solid blue;
+    border-top-color: rgb(34, 33, 33);
+    padding: 10px;
+    display: inline-block;
+    border-radius: 50%;
+}
+.rating p {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.rating p span {
+    font-size: 30px;
+}

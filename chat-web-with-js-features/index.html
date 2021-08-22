@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light-theme">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat-Web</title>
+    
+    <link rel="stylesheet" href="fontawesome/icons/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    
+    <div class="components-container">
+
+        <!-- nav -->
+        <nav>
+            <div class="logo">
+                Chat-Web
+            </div>
+            <div class="search-box">
+                <input type="search" name="" id="" placeholder=" Try 'chat web'">
+                <i class="fa fa-search"></i>
+            </div>
+            <ul>
+                <li class="home-btn"><a href=""> <i class="fa fa-home"></i>  <p>Home</p> </a></li>
+                <li class="chats-btn"><a href=""> <i class="fa fa-comments-o"></i> <p>Chats</p>  </a></li>
+                <li><a href="">  <i class="fa fa-bell-o"></i> <p>Notification</p>  </a></li>
+                <li><a class="menu" href="#light-box-menu"> <i class="fa fa-ellipsis-v"></i> <p>More</p>  </a></li>
+            </ul>
+
+            <div class="nav-links-dd">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+
+        <!-- menu -->
+        <div class="light-box menu-target" id="light-box-menu">
+            <div class="menu-list">
+                <a href="#" class="close">Close</a>
+                <ul>
+                    <li><a href="" class="profile">My Profile</a></li>
+                    <li><a href="" class="suggestions">Suggestions</a></li>
+                    <li><a href="" class="fast-music">Friends</a></li>
+                    <li><a href="#to-do" class="fast-music">To-do-list</a></li>
+                    <li><a href="" class="fast-music">Fast Music</a></li>
+                    <li><a href="" class="profile">Settings</a></li>
+                    <li class="themes">Themes
+                        <div class="themes-h">
+                            <div class="them1 t">
+                                <p>Light Theme</p>
+                                <div class="toggle-container">
+                                    <input class="lt" type="checkbox" name="theme-lt" id="switch-lt" />
+                                    <label for="switch-lt">Toggle</label>
+                                </div>
+                            </div>
+                            <div class="them1 t">
+                                <p>Dark-theme Blue</p>
+                                <div class="toggle-container">
+                                    <input class="sdb" type="checkbox" name="theme-db" id="switch-dblue" />
+                                    <label for="switch-dblue">Toggle</label>
+                                </div>
+                            </div>
+                            <div class="theme2 t">
+                                <p>Dark-theme Peach</p>
+                                <div class="toggle-container">
+                                    <input class="sdp" type="checkbox" name="theme-dp" id="switch-dpeach" />
+                                    <label for="switch-dpeach">Toggle</label>
+                                </div>
+                            </div>
+                            <div class="theme3 t">
+                                <p>Dark-theme indigo </p>
+                                <div class="toggle-container">
+                                    <input class="sdi" type="checkbox" name="theme-di" id="switch-dindigo" />
+                                    <label for="switch-dindigo">Toggle</label>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- todo -->
+        <div class=" light-box add-to-do " id="to-do">
+            <div class="to-do-container">
+                <a href="#" class="close">Close</a>
+                <div class="add-task">
+                    <label for="task-inp">New Task</label>
+                    <input type="text" name="new-task" id="task-inp" class="task-inp" placeholder="Enter a task">
+                    <input type="button" value="Add to Task">
+                </div>
+
+                <div class="all-tasks">
+                    <h2 class="all-task-h">All Tasks</h2>
+                    <div class="task-components">
+                        <div class="task-group-card">
+                            <div class="date-of-month">20/07/2022</div>
+                            <div class="task-remaining"> 6 Task remaining</div>
+                            <div class="container">
+    
+                                <div class="task">
+                                    <input type="checkbox">
+                                     <p class="task-name"> Get some drinks</p>
+                                </div>
+                                <div class="task">
+                                    <input type="checkbox">
+                                     <p class="task-name"> Get some coffee</p>
+                                </div>
+                                <div class="task">
+                                    <input type="checkbox">
+                                     <p class="task-name"> Get to the library</p>
+                                </div>
+                                <div class="task">
+                                    <input type="checkbox">
+                                     <p class="task-name"> Get some smokes</p>
+                                </div>
+                                <div class="task">
+                                    <input type="checkbox">
+                                     <p class="task-name"> begin to run</p>
+                                </div>
+                                
+    
+                            </div>
+                        </div>
+
+                        <div class="task-group-card">
+                            <div class="date-of-month">20/07/2021</div>
+                            <div class="task-remaining"> 6 Task remaining</div>
+                            <div class="container">
+    
+                                <div class="task">
+                                    <input type="checkbox">
+                                     <p class="task-name"> Get some drinks</p>
+                                </div>
+                                <div class="task">
+                                    <input type="checkbox">
+                                     <p class="task-name"> Get some drinks</p>
+                                </div>
+                                <div class="task">
+                                    <input type="checkbox">
+                                     <p class="task-name"> Get some drinks</p>
+                                </div>
+                                <div class="task">
+                                    <input type="checkbox">
+                                     <p class="task-name"> Get some drinks</p>
+                                </div>
+                                <div class="task">
+                                    <input type="checkbox">
+                                     <p class="task-name"> Get some drinks</p>
+                                </div>
+                                
+    
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- home section -->
+        <div class="home">
+                <div class="inner-container">
+                    <!-- profile checker -->
+                    <div class="profile panel">
+                        <div class="photo-background">
+                            <img src="images/images.png" alt="" srcset="">
+                        </div>
+                        <div class="user-det">
+                            <div class="user-name-worn">
+                                <h2 class="name">Temitope Black</h2>
+                                <p class="work">Programmer at Self Employed</p>
+                            </div>
+                            <div class="following fo">
+                                <h2 class="">
+                                    Following
+                                </h2>
+                                <p class="following-no">234</p>
+                            </div>
+                            <div class="followers fo">
+                                <h2 class="">
+                                    Followers
+                                </h2>
+                                <p class="followers-no">234</p>
+                            </div>
+                            <h2 class="view">View Profile</h2>
+                        </div>
+                    </div>
+                    
+                    <!-- suggestion panel -->
+                    <div class="suggestions panel">
+                        <div class="suggestion-nav">
+                            <h2>Suggestion</h2>
+                            <p>:</p>
+                        </div>
+                        <div class="suggested">
+                            <div class="person">
+                                <div class="details">
+                                    <img src="images/images.png" alt="" srcset="">
+                                    <div class="personals">
+                                        <h3 class="name">Credible Black</h3>
+                                        <p class="work">PHP Developer</dip>
+                                    </div>
+                                </div>
+                                <i class="fa fa">
+                                    +
+                                </i>
+                            </div>
+                            <div class="person">
+                                <div class="details">
+                                    <img src="images/images.png" alt="" srcset="">
+                                    <div class="personals">
+                                        <h3 class="name">Credible Black</h3>
+                                        <p class="work">PHP Developer</dip>
+                                    </div>
+                                </div>
+                                <i class="fa fa">
+                                    +
+                                </i>
+                            </div>
+                            <div class="person">
+                                <div class="details">
+                                    <img src="images/images.png" alt="" srcset="">
+                                    <div class="personals">
+                                        <h3 class="name">Credible Black</h3>
+                                        <p class="work">PHP Developer</dip>
+                                    </div>
+                                </div>
+                                <i class="fa fa">
+                                    +
+                                </i>
+                            </div>
+                            <div class="person">
+                                <div class="details">
+                                    <img src="images/images.png" alt="" srcset="">
+                                    <div class="personals">
+                                        <h3 class="name">Credible Black</h3>
+                                        <p class="work">PHP Developer</dip>
+                                    </div>
+                                </div>
+                                <i class="fa fa">
+                                    +
+                                </i>
+                            </div>
+                            <div class="person">
+                                <div class="details">
+                                    <img src="images/images.png" alt="" srcset="">
+                                    <div class="personals">
+                                        <h3 class="name">Credible Black</h3>
+                                        <p class="work">PHP Developer</dip>
+                                    </div>
+                                </div>
+                                <i class="fa fa">
+                                    +
+                                </i>
+                            </div>
+                            <div class="person">
+                                <div class="details">
+                                    <img src="images/images.png" alt="" srcset="">
+                                    <div class="personals">
+                                        <h3 class="name">Credible Black</h3>
+                                        <p class="work">PHP Developer</dip>
+                                    </div>
+                                </div>
+                                <i class="fa fa">
+                                    +
+                                </i>
+                            </div>
+                            <div class="person">
+                                <div class="details">
+                                    <img src="images/images.png" alt="" srcset="">
+                                    <div class="personals">
+                                        <h3 class="name">Credible Black</h3>
+                                        <p class="work">PHP Developer</dip>
+                                    </div>
+                                </div>
+                                <i class="fa fa">
+                                    +
+                                </i>
+                            </div>
+                            <div class="person">
+                                <div class="details">
+                                    <img src="images/images.png" alt="" srcset="">
+                                    <div class="personals">
+                                        <h3 class="name">Credible Black</h3>
+                                        <p class="work">PHP Developer</dip>
+                                    </div>
+                                </div>
+                                <i class="fa fa">
+                                    +
+                                </i>
+                            </div>
+                            <div class="person">
+                                <div class="details">
+                                    <img src="images/images.png" alt="" srcset="">
+                                    <div class="personals">
+                                        <h3 class="name">Credible Black</h3>
+                                        <p class="work">PHP Developer</dip>
+                                    </div>
+                                </div>
+                                <i class="fa fa">
+                                    +
+                                </i>
+                            </div>
+                        </div>
+                        <div class="view-more">
+                            View More
+                        </div>
+                    </div>
+
+                    <!-- posts -->
+                    <div class="posts ">
+                        <div class="post-upload panel">
+                            <img class="user-post-icon" src="images/images.png" alt="" srcset="">
+                            <input type="text" name="post-input" id="post-input" placeholder="What's on your mind">
+                            <button>Post</button>
+                        </div>
+
+                        <div class="around-you">
+
+                            <div class="people-around-you">
+                                <header> <h2> People Nearby</h2> <i>:</i></header>
+                                <div class="people-nearby">
+                                    <div class="user-nearby-card panel">
+                                        <div class="user-nearby-content-holder">
+                                            <img class="user-nearby-image" src="images/images.png" alt="" srcset="">
+                                            <h3 class="user-nearby-name">John doe</h3>
+                                            <p class="user-nearby-work">Work as Programmer</p>
+                                            <div class="user-nearby-card-tools">
+                                                <div class="follow">
+                                                    Follow
+                                                </div>
+                                                <div class="message">
+                                                    Message
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <button class="view-profile-nearby">Visit Profile</button>
+                                    </div>
+
+                                    <div class="user-nearby-card panel">
+                                        <div class="user-nearby-content-holder">
+                                            <img class="user-nearby-image" src="images/images.png" alt="" srcset="">
+                                            <h3 class="user-nearby-name">John doe</h3>
+                                            <p class="user-nearby-work">Work as Programmer</p>
+                                            <div class="user-nearby-card-tools">
+                                                <div class="follow">
+                                                    Follow
+                                                </div>
+                                                <div class="message">
+                                                    Message
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <button class="view-profile-nearby">Visit Profile</button>
+                                    </div>
+
+                                    <div class="user-nearby-card panel">
+                                        <div class="user-nearby-content-holder">
+                                            <img class="user-nearby-image" src="images/images.png" alt="" srcset="">
+                                            <h3 class="user-nearby-name">John doe</h3>
+                                            <p class="user-nearby-work">Work as Programmer</p>
+                                            <div class="user-nearby-card-tools">
+                                                <div class="follow">
+                                                    Follow
+                                                </div>
+                                                <div class="message">
+                                                    Message
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <button class="view-profile-nearby">Visit Profile</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="all-posts">
+                            
+                            <!-- posts -->
+                            <div class="chat-web-post panel">
+                                <div class="chat-web-user">
+                                    <div class="header">
+                                        <img src="images/images.png" alt="" class="user-icon">
+                                        <div class="username-time">
+                                            <h2 class="username">User Name</h2>
+                                            <p class="time-posted"><i class="fafa">o</i> <span class="time-dig"> 3 </span> <span>hours ago</span> </p>
+                                        </div>
+                                    </div>
+                                    <i class="fa">:</i>
+                                </div>
+                                <div class="post-text">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                    Nostrum iure facilis quia amet explicabo obcaecati beatae
+                                    vel impedit saepe nobis. Lorem ipsum dolor sit,
+                                    amet consectetur adipisicing elit. 
+                                    Aliquam a et exercitationem ipsum dolore delectus!
+                                </div>
+                                <div class="lcv">
+                                    <div class="lc">
+                                        <div class="like"><p>Likes <span class="no-of-likes"> 0 </span></p></div>
+                                        <div class="comments"><p>Comment <span class="no-of-comment"> 0 </span></p></div>
+                                    </div>
+                                    <div class="views"><p>Views <span class="no-of-views"> 13 </span></p></div>
+                                </div>
+                            </div>
+
+                            <div class="chat-web-post panel">
+                                <div class="chat-web-user">
+                                    <div class="header">
+                                        <img src="images/images.png" alt="" class="user-icon">
+                                        <div class="username-time">
+                                            <h2 class="username">User Name</h2>
+                                            <p class="time-posted"><i class="fafa">o</i> <span class="time-dig"> 3 </span> <span>hours ago</span> </p>
+                                        </div>
+                                    </div>
+                                    <i class="fa">:</i>
+                                </div>
+                                <div class="post-text">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                    Nostrum iure facilis quia amet explicabo obcaecati beatae
+                                    vel impedit saepe nobis. Lorem ipsum dolor sit,
+                                    amet consectetur adipisicing elit. 
+                                    Aliquam a et exercitationem ipsum dolore delectus!
+                                </div>
+                                <div class="lcv">
+                                    <div class="lc">
+                                        <div class="like"><p>Likes <span class="no-of-likes"> 0 </span></p></div>
+                                        <div class="comments"><p>Comment <span class="no-of-comment"> 0 </span></p></div>
+                                    </div>
+                                    <div class="views"><p>Views <span class="no-of-views"> 13 </span></p></div>
+                                </div>
+                            </div>
+
+                            <div class="chat-web-post panel">
+                                <div class="chat-web-user">
+                                    <div class="header">
+                                        <img src="images/images.png" alt="" class="user-icon">
+                                        <div class="username-time">
+                                            <h2 class="username">User Name</h2>
+                                            <p class="time-posted"><i class="fafa">o</i> <span class="time-dig"> 3 </span> <span>hours ago</span> </p>
+                                        </div>
+                                    </div>
+                                    <i class="fa">:</i>
+                                </div>
+                                <div class="post-text">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                    Nostrum iure facilis quia amet explicabo obcaecati beatae
+                                    vel impedit saepe nobis. Lorem ipsum dolor sit,
+                                    amet consectetur adipisicing elit. 
+                                    Aliquam a et exercitationem ipsum dolore delectus!
+                                </div>
+                                <div class="lcv">
+                                    <div class="lc">
+                                        <div class="like"><p>Likes <span class="no-of-likes"> 0 </span></p></div>
+                                        <div class="comments"><p>Comment <span class="no-of-comment"> 0 </span></p></div>
+                                    </div>
+                                    <div class="views"><p>Views <span class="no-of-views"> 13 </span></p></div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                    <!-- new chats -->
+                    <div class="todolist panel">
+                        <div class="task-nav">
+                            <h2>To-do-list</h2>
+                        </div>
+                        <div class="task-components">
+                            <div class="task-group-card">
+                                <div class="date-of-month">20/07/2022</div>
+                                <div class="task-remaining"> 6 Task remaining</div>
+                                <div class="container">
+
+                                    <div class="task">
+                                        <input type="checkbox">
+                                        <p class="task-name"> Get some drinks</p>
+                                    </div>
+                                    <div class="task">
+                                        <input type="checkbox">
+                                        <p class="task-name"> Get some coffee</p>
+                                    </div>
+                                    <div class="task">
+                                        <input type="checkbox">
+                                        <p class="task-name"> Get to the library</p>
+                                    </div>
+                                    <div class="task">
+                                        <input type="checkbox">
+                                        <p class="task-name"> Get some smokes</p>
+                                    </div>
+                                    <div class="task">
+                                        <input type="checkbox">
+                                        <p class="task-name"> begin to run</p>
+                                    </div>
+                                    
+
+                                </div>
+                            </div>
+
+                            <div class="task-group-card">
+                                <div class="date-of-month">20/07/2021</div>
+                                <div class="task-remaining"> 6 Task remaining</div>
+                                <div class="container">
+
+                                    <div class="task">
+                                        <input type="checkbox">
+                                        <p class="task-name"> Get some drinks</p>
+                                    </div>
+                                    <div class="task">
+                                        <input type="checkbox">
+                                        <p class="task-name"> Get some drinks</p>
+                                    </div>
+                                    <div class="task">
+                                        <input type="checkbox">
+                                        <p class="task-name"> Get some drinks</p>
+                                    </div>
+                                    <div class="task">
+                                        <input type="checkbox">
+                                        <p class="task-name"> Get some drinks</p>
+                                    </div>
+                                    <div class="task">
+                                        <input type="checkbox">
+                                        <p class="task-name"> Get some drinks</p>
+                                    </div>
+                                    
+
+                                </div>
+                            </div>
+                        
+                        </div>
+                        <div class="task-footer">
+                            <button><a href="#to-do">Add new task</a></button>
+                        </div>
+
+                    </div>
+
+
+                    <!-- fast-music-panel -->
+                    <div class="fmp panel">
+                        <div class="fast-music-holder">
+                            <header class="fast-music-nav">
+                                <h2>Fast music</h2>
+                                <i class="fa fa-search"></i>
+                            </header>
+                            <div class="fast-music-player-holder">
+                                <div class="fast-music-player">
+                                    <img class="img-blur" src="images/player.jpg" alt="" srcset="">
+                                    <img src="images/player.jpg" alt="" srcset="">
+                                    <div class="icon-btns">
+                                        <button class="btn prev"> <i class="fa fa-backward"></i> </button>
+                                        <button class="btn play"> <i class="fa fa-play"></i> </button>
+                                        <button class="btn next"> <i class="fa fa-forward"></i> </button>
+                                    </div>
+                                    <div class="play-timer">
+                                        <p class="mins-counted">02:05</p>
+                                        <div class="time-range-holder">
+                                            <div class="time-range">
+                                                <div class="time-range-btn"></div>
+                                            </div>
+                                        </div>
+                                        <p class="mins-remaining">02:05</p>
+                                    </div>
+                                    <div class="song-name">
+                                        Dorime
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+        </div>
+
+        <!-- chat section -->
+        <div class="chat-section-holder">
+            <!-- <a href="#chat-nav" class=""> -->
+                <i class="fa fa-ellipsis-v drag-btn"></i>
+            <!-- </a> -->
+            <div class="chat-section">
+                <div class="chats-side" id="chat-nav">
+                    <!-- <i class="fa"> > </i> -->
+                    <div class="container">
+                        <header>
+                            <h2 class="heading">Chats</h2>
+                            <div class="btn-search-holder">
+                                
+                                <div class="chats-type">
+                                    <button>All Chats <i class="fa fa-caret-down"></i></button>
+                                    <div class="chat-type-content">
+                                    <p class="all"> All Chats</p>
+                                    <p class="friends">Friends</p>
+                                    <p class="groups">Groups</p>
+                                    <p class="unread">Unread</p>
+                                    <p class="archived">Archived</p>
+                                    </div>
+                                </div>
+        
+                                <div class="search-users">
+                                    <input type="text" name="search" id="search" placeholder="Search Chats">
+                                    <i class="fa fa-search">  </i>
+                                </div>
+                            </div>
+                        </header>
+                        <div class="content v">
+                            <div class="all-chats">
+
+                                <div class="chat">
+                                    <img src="images/player.jpg" alt="" class="chat-img">
+                                    <div>
+                                        <h2 class="chat-name">Temitope</h2>
+                                        <p class="last-message">GIF Attachment</p>
+                                    </div>
+                                    <p class="last-chat-time">
+                                       <span class="last-time"> 3 mins ago</span>
+
+                                        <span class="message-x">
+                                            5
+                                        </span>
+                                    </p>
+                                </div>
+                                <div class="chat">
+                                    <img src="images/player.jpg" alt="" class="chat-img">
+                                    <div>
+                                        <h2 class="chat-name">Temitope</h2>
+                                        <p class="last-message">GIF Attachment</p>
+                                    </div>
+                                    <p class="last-chat-time">
+                                       2 hours ago
+                                    </p>
+                                </div>
+                                <div class="chat">
+                                    <img src="images/player.jpg" alt="" class="chat-img">
+                                    <div>
+                                        <h2 class="chat-name">Temitope</h2>
+                                        <p class="last-message">GIF Attachment</p>
+                                    </div>
+                                    <p class="last-chat-time">
+                                        Yesterday
+                                    </p>
+                                </div>
+                                <div class="chat">
+                                    <img src="images/player.jpg" alt="" class="chat-img">
+                                    <div>
+                                        <h2 class="chat-name">Temitope</h2>
+                                        <p class="last-message">GIF Attachment</p>
+                                    </div>
+                                    <p class="last-chat-time">
+                                        12/01/30
+                                    </p>
+                                </div>
+                                <div class="chat">
+                                    <img src="images/player.jpg" alt="" class="chat-img">
+                                    <div>
+                                        <h2 class="chat-name">Temitope</h2>
+                                        <p class="last-message">GIF Attachment</p>
+                                    </div>
+                                    <p class="last-chat-time">
+                                        12/01/30
+                                    </p>
+                                </div>
+                                <div class="chat">
+                                    <img src="images/player.jpg" alt="" class="chat-img">
+                                    <div>
+                                        <h2 class="chat-name">Temitope</h2>
+                                        <p class="last-message">GIF Attachment</p>
+                                    </div>
+                                    <p class="last-chat-time">
+                                        12/01/30
+                                    </p>
+                                </div>
+                                <div class="chat">
+                                    <img src="images/player.jpg" alt="" class="chat-img">
+                                    <div>
+                                        <h2 class="chat-name">Temitope</h2>
+                                        <p class="last-message">GIF Attachment</p>
+                                    </div>
+                                    <p class="last-chat-time">
+                                        12/01/30
+                                    </p>
+                                </div><div class="chat">
+                                    <img src="images/player.jpg" alt="" class="chat-img">
+                                    <div>
+                                        <h2 class="chat-name">Temitope</h2>
+                                        <p class="last-message">GIF Attachment</p>
+                                    </div>
+                                    <p class="last-chat-time">
+                                        12/01/30
+                                    </p>
+                                </div>
+                                <div class="chat">
+                                    <img src="images/player.jpg" alt="" class="chat-img">
+                                    <div>
+                                        <h2 class="chat-name">Temitope</h2>
+                                        <p class="last-message">GIF Attachment</p>
+                                    </div>
+                                    <p class="last-chat-time">
+                                        12/01/30
+                                    </p>
+                                </div>
+                                <div class="chat">
+                                    <img src="images/player.jpg" alt="" class="chat-img">
+                                    <div>
+                                        <h2 class="chat-name">Temitope</h2>
+                                        <p class="last-message">GIF Attachment</p>
+                                    </div>
+                                    <p class="last-chat-time">
+                                        12/01/30
+                                    </p>
+                                </div>
+
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chat-view">
+                    <div class="start-new">
+                        <div class="img-container">
+                            <img src="images/player.jpg" alt="" srcset="">
+                        </div>
+                        <h2>Welcome, <span>Credible</span>!</h2>
+                        <p>Please select a chat to start messaging.</p>
+                        <button class="start-conversation">Start  a Conversation <i class="fa fa-pencil-square-o"></i></button>
+                    </div>
+
+                    <div class="start-new-chat-v">
+                        <header>
+                            <p>
+                                <i class="fa fa-long-arrow-left start-new-back"></i>
+                               <span> New Chat</span>
+                            </p>
+                        </header>
+                        <div class="search-friends">
+                            <i class="fa fa-search"></i>
+                            <input type="text" name="" id="" placeholder="Search contacts">
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+
+
+    </div>
+
+    
+    <script src="js/app.js"></script>
+    <script src="js/ui.js"></script>
+</body>
+</html>

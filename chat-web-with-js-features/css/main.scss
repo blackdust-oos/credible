@@ -1,0 +1,110 @@
+@import 'nav';
+@import 'innercontainer';
+@import 'lightboxmenu';
+@import 'todo';
+@import 'chats';
+
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding:0;
+}
+html{
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    --shadow :  0 5px 10px rgba(51, 50, 50, 0.3);
+    --uniq-color: rgba(54, 54, 54, 0.5);
+    // display: grid;
+    // align-items: center;
+    // justify-items: center;
+    // transition: 1s;\
+    --zero-color:rgb(245, 55, 55);
+
+    
+    
+
+
+}
+html[data-theme='light-theme']{
+    --grey : rgb(165,164,164);
+    --btn-white: rgb(250, 246, 246);
+     --bg: #fcfcfc;
+     --bg-panel: #ebebeb;
+     --color-headings: #0077ff;
+     --colorr-text: #3333333;
+     --bg-color-mode: #0077ff;
+     --btn-switch:#5a5858;
+}
+
+// [data-theme='dark']
+html[data-theme='dark']{
+     --grey : rgb(165,164,164);
+     --btn-white: rgb(250, 246, 246);
+     --bg: #333333;
+     --bg-panel: #434343;
+     --color-headings: #0077ff;
+     --colorr-text: #b5b5b5;
+     --bg-color-mode: #0077ff;
+     --btn-switch: rgb(250, 246, 246);
+
+
+
+    transition: 1s;
+
+}
+//[data-theme='dark-peach']
+html[data-theme='dark-peach']{
+    --grey : rgb(165,164,164);
+    --btn-white: rgb(250, 246, 246);
+    --bg: #333333;
+    --bg-panel: #434343;
+    --color-headings: #dd4b39;
+    --colorr-text: #b5b5b5;
+    --bg-color-mode: #dd4b39;
+    --btn-switch: rgb(250, 246, 246);
+
+
+
+    transition: 1s;
+
+}
+html[data-theme='dark-indigo']{
+    --grey : rgb(165,164,164);
+    --btn-white: rgb(250, 246, 246);
+    --bg: #333333;
+    --bg-panel: #434343;
+    --color-headings: #ac5bd5;
+    --colorr-text: #b5b5b5;
+    --bg-color-mode: #ac5bd5;
+    --btn-switch: rgb(250, 246, 246);
+
+
+
+    transition: 1s;
+
+}
+body{
+    background-color: var(--bg);
+}
+.light-box{
+    position:fixed;
+    z-index: 20;
+    width:100vw;
+    height:100vh;
+    background:rgba(80, 80, 78, 0.7);
+    top:-2000vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+h2{
+    font-size: 15px;
+    color:var(--colorr-text);
+}
+
+.block{
+    display:block;
+}
+.none{
+    display:none;
+}
